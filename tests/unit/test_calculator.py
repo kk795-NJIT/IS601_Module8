@@ -232,3 +232,112 @@ def test_divide_by_zero() -> None:
     # Assert that the exception message contains the expected error message
     assert "Cannot divide by zero!" in str(excinfo.value), \
         f"Expected error message 'Cannot divide by zero!', but got '{excinfo.value}'"
+
+
+# Edge Case Tests for Exception Handling
+# -----------------------------------------------
+
+@pytest.mark.parametrize(
+    "a, b, operation_func",
+    [
+        (2, 3, add),
+        (5, 3, subtract),
+        (2, 3, multiply),
+        (6, 3, divide),
+    ],
+    ids=[
+        "add_normal_operation",
+        "subtract_normal_operation",
+        "multiply_normal_operation",
+        "divide_normal_operation",
+    ]
+)
+def test_operations_with_valid_inputs(a: Number, b: Number, operation_func) -> None:
+    """
+    Parameterized test to verify that all operations work correctly with valid inputs.
+    This ensures basic functionality of all arithmetic operations.
+    """
+    result = operation_func(a, b)
+    # Just verify the operation completes without exception
+    assert result is not None, f"Operation {operation_func.__name__} returned None"
+
+
+def test_add_with_large_numbers() -> None:
+    """
+    Test add with very large numbers to ensure it handles them correctly.
+    """
+    result = add(10**308, 10**308)
+    assert result == 2 * 10**308
+
+
+def test_subtract_resulting_in_zero() -> None:
+    """
+    Test subtract when the result is zero.
+    """
+    result = subtract(5, 5)
+    assert result == 0
+
+
+def test_multiply_resulting_in_negative() -> None:
+    """
+    Test multiply with opposite sign numbers.
+    """
+    result = multiply(-3, 4)
+    assert result == -12
+
+
+def test_divide_with_negative_dividend() -> None:
+    """
+    Test divide with negative dividend.
+    """
+    result = divide(-10, 2)
+    assert result == -5.0
+
+
+def test_divide_with_negative_divisor() -> None:
+    """
+    Test divide with negative divisor.
+    """
+    result = divide(10, -2)
+    assert result == -5.0
+
+
+def test_divide_with_both_negative() -> None:
+    """
+    Test divide with both negative numbers.
+    """
+    result = divide(-10, -2)
+    assert result == 5.0
+
+
+def test_divide_resulting_in_float() -> None:
+    """
+    Test divide that results in a decimal.
+    """
+    result = divide(7, 2)
+    assert result == 3.5
+
+
+def test_add_very_small_floats() -> None:
+    """
+    Test add with very small floating point numbers.
+    """
+    result = add(0.0001, 0.0002)
+    assert abs(result - 0.0003) < 1e-10
+
+
+def test_subtract_negative_result() -> None:
+    """
+    Test subtract resulting in negative number.
+    """
+    result = subtract(3, 5)
+    assert result == -2
+
+
+def test_multiply_with_fraction() -> None:
+    """
+    Test multiply with fractional numbers.
+    """
+    result = multiply(0.5, 0.5)
+    assert result == 0.25
+

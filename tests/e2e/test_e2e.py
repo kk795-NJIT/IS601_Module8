@@ -71,3 +71,56 @@ def test_calculator_divide_by_zero(page, fastapi_server):
     # "Error: Cannot divide by zero!". This verifies that the application handles division by zero
     # gracefully and displays the correct error message to the user.
     assert page.inner_text('#result') == 'Error: Cannot divide by zero!'
+
+@pytest.mark.e2e
+def test_calculator_subtract(page, fastapi_server):
+    """
+    Test the subtraction functionality of the calculator.
+
+    This test simulates a user performing a subtraction operation.
+    """
+    page.goto('http://localhost:8000')
+    page.fill('#a', '20')
+    page.fill('#b', '8')
+    page.click('button:text("Subtract")')
+    assert page.inner_text('#result') == 'Calculation Result: 12'
+
+@pytest.mark.e2e
+def test_calculator_multiply(page, fastapi_server):
+    """
+    Test the multiplication functionality of the calculator.
+
+    This test simulates a user performing a multiplication operation.
+    """
+    page.goto('http://localhost:8000')
+    page.fill('#a', '7')
+    page.fill('#b', '6')
+    page.click('button:text("Multiply")')
+    assert page.inner_text('#result') == 'Calculation Result: 42'
+
+@pytest.mark.e2e
+def test_calculator_divide(page, fastapi_server):
+    """
+    Test the division functionality of the calculator.
+
+    This test simulates a user performing a division operation.
+    """
+    page.goto('http://localhost:8000')
+    page.fill('#a', '20')
+    page.fill('#b', '4')
+    page.click('button:text("Divide")')
+    assert page.inner_text('#result') == 'Calculation Result: 5'
+
+@pytest.mark.e2e
+def test_calculator_with_floats(page, fastapi_server):
+    """
+    Test the calculator with floating point numbers.
+
+    This test verifies that the calculator correctly handles floating point arithmetic.
+    """
+    page.goto('http://localhost:8000')
+    page.fill('#a', '5.5')
+    page.fill('#b', '2.5')
+    page.click('button:text("Add")')
+    assert page.inner_text('#result') == 'Calculation Result: 8'
+

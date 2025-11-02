@@ -19,6 +19,10 @@ to perform arithmetic operations based on user input.
 """
 
 from typing import Union  # Import Union for type hinting multiple possible types
+import logging  # Import logging module for tracking operations
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 # Define a type alias for numbers that can be either int or float
 Number = Union[int, float]
@@ -40,8 +44,11 @@ def add(a: Number, b: Number) -> Number:
     >>> add(2.5, 3)
     5.5
     """
+    # Log the operation
+    logger.info(f"Performing addition: {a} + {b}")
     # Perform addition of a and b
     result = a + b
+    logger.debug(f"Addition result: {result}")
     return result
 
 def subtract(a: Number, b: Number) -> Number:
@@ -61,8 +68,11 @@ def subtract(a: Number, b: Number) -> Number:
     >>> subtract(5.5, 2)
     3.5
     """
+    # Log the operation
+    logger.info(f"Performing subtraction: {a} - {b}")
     # Perform subtraction of b from a
     result = a - b
+    logger.debug(f"Subtraction result: {result}")
     return result
 
 def multiply(a: Number, b: Number) -> Number:
@@ -82,8 +92,11 @@ def multiply(a: Number, b: Number) -> Number:
     >>> multiply(2.5, 4)
     10.0
     """
+    # Log the operation
+    logger.info(f"Performing multiplication: {a} * {b}")
     # Perform multiplication of a and b
     result = a * b
+    logger.debug(f"Multiplication result: {result}")
     return result
 
 def divide(a: Number, b: Number) -> float:
@@ -110,11 +123,16 @@ def divide(a: Number, b: Number) -> float:
         ...
     ValueError: Cannot divide by zero!
     """
+    # Log the operation
+    logger.info(f"Performing division: {a} / {b}")
     # Check if the divisor is zero to prevent division by zero
     if b == 0:
+        # Log the error
+        logger.error("Division by zero attempted")
         # Raise a ValueError with a descriptive message
         raise ValueError("Cannot divide by zero!")
     
     # Perform division of a by b and return the result as a float
     result = a / b
+    logger.debug(f"Division result: {result}")
     return result

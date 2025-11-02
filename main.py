@@ -8,12 +8,20 @@ from fastapi.exceptions import RequestValidationError
 from app.operations import add, subtract, multiply, divide  # Ensure correct import path
 import uvicorn
 import logging
+import sys
 
-# Setup logging
-logging.basicConfig(level=logging.INFO)
+# Setup comprehensive logging configuration
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout),
+        logging.FileHandler('app.log')
+    ]
+)
 logger = logging.getLogger(__name__)
 
-app = FastAPI()
+app = FastAPI(title="FastAPI Calculator", version="1.0.0")
 
 # Setup templates directory
 templates = Jinja2Templates(directory="templates")
@@ -61,6 +69,7 @@ async def read_root(request: Request):
     """
     Serve the index.html template.
     """
+    logger.info("GET / - Serving homepage")
     return templates.TemplateResponse("index.html", {"request": request})
 
 @app.post("/add", response_model=OperationResponse, responses={400: {"model": ErrorResponse}})
@@ -68,8 +77,10 @@ async def add_route(operation: OperationRequest):
     """
     Add two numbers.
     """
+    logger.info(f"POST /add - Adding {operation.a} + {operation.b}")
     try:
         result = add(operation.a, operation.b)
+        logger.info(f"Add operation successful: {operation.a} + {operation.b} = {result}")
         return OperationResponse(result=result)
     except Exception as e:
         logger.error(f"Add Operation Error: {str(e)}")
@@ -80,8 +91,10 @@ async def subtract_route(operation: OperationRequest):
     """
     Subtract two numbers.
     """
+    logger.info(f"POST /subtract - Subtracting {operation.a} - {operation.b}")
     try:
         result = subtract(operation.a, operation.b)
+        logger.info(f"Subtract operation successful: {operation.a} - {operation.b} = {result}")
         return OperationResponse(result=result)
     except Exception as e:
         logger.error(f"Subtract Operation Error: {str(e)}")
@@ -92,8 +105,10 @@ async def multiply_route(operation: OperationRequest):
     """
     Multiply two numbers.
     """
+    logger.info(f"POST /multiply - Multiplying {operation.a} * {operation.b}")
     try:
         result = multiply(operation.a, operation.b)
+        logger.info(f"Multiply operation successful: {operation.a} * {operation.b} = {result}")
         return OperationResponse(result=result)
     except Exception as e:
         logger.error(f"Multiply Operation Error: {str(e)}")
@@ -104,8 +119,10 @@ async def divide_route(operation: OperationRequest):
     """
     Divide two numbers.
     """
+    logger.info(f"POST /divide - Dividing {operation.a} / {operation.b}")
     try:
         result = divide(operation.a, operation.b)
+        logger.info(f"Divide operation successful: {operation.a} / {operation.b} = {result}")
         return OperationResponse(result=result)
     except ValueError as e:
         logger.error(f"Divide Operation Error: {str(e)}")
@@ -115,4 +132,5 @@ async def divide_route(operation: OperationRequest):
         raise HTTPException(status_code=500, detail="Internal Server Error")
 
 if __name__ == "__main__":
+    logger.info("Starting FastAPI Calculator Application")
     uvicorn.run(app, host="127.0.0.1", port=8000)
