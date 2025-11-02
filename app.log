@@ -1,0 +1,26 @@
+2025-11-02 17:11:44,311 - __main__ - INFO - Starting FastAPI Calculator Application
+2025-11-02 17:11:50,047 - __main__ - INFO - GET / - Serving homepage
+2025-11-02 17:11:57,875 - __main__ - INFO - POST /add - Adding 100.0 + 200.0
+2025-11-02 17:11:57,876 - app.operations - INFO - Performing addition: 100.0 + 200.0
+2025-11-02 17:11:57,876 - __main__ - INFO - Add operation successful: 100.0 + 200.0 = 300.0
+2025-11-02 17:12:01,873 - __main__ - INFO - POST /add - Adding 102.0 + 200.0
+2025-11-02 17:12:01,873 - app.operations - INFO - Performing addition: 102.0 + 200.0
+2025-11-02 17:12:01,874 - __main__ - INFO - Add operation successful: 102.0 + 200.0 = 302.0
+2025-11-02 17:12:04,974 - __main__ - INFO - POST /add - Adding 103.0 + 200.0
+2025-11-02 17:12:04,975 - app.operations - INFO - Performing addition: 103.0 + 200.0
+2025-11-02 17:12:04,975 - __main__ - INFO - Add operation successful: 103.0 + 200.0 = 303.0
+2025-11-02 17:12:09,321 - __main__ - INFO - POST /add - Adding 109.0 + 200.0
+2025-11-02 17:12:09,321 - app.operations - INFO - Performing addition: 109.0 + 200.0
+2025-11-02 17:12:09,321 - __main__ - INFO - Add operation successful: 109.0 + 200.0 = 309.0
+2025-11-02 17:12:13,758 - __main__ - INFO - POST /subtract - Subtracting 109.0 - 100.0
+2025-11-02 17:12:13,758 - app.operations - INFO - Performing subtraction: 109.0 - 100.0
+2025-11-02 17:12:13,759 - __main__ - INFO - Subtract operation successful: 109.0 - 100.0 = 9.0
+2025-11-02 17:12:18,843 - __main__ - INFO - POST /subtract - Subtracting 109.0 - 119.0
+2025-11-02 17:12:18,843 - app.operations - INFO - Performing subtraction: 109.0 - 119.0
+2025-11-02 17:12:18,843 - __main__ - INFO - Subtract operation successful: 109.0 - 119.0 = -10.0
+2025-11-02 17:12:20,290 - __main__ - INFO - POST /multiply - Multiplying 109.0 * 119.0
+2025-11-02 17:12:20,290 - app.operations - INFO - Performing multiplication: 109.0 * 119.0
+2025-11-02 17:12:20,290 - __main__ - INFO - Multiply operation successful: 109.0 * 119.0 = 12971.0
+2025-11-02 17:12:21,925 - __main__ - INFO - POST /divide - Dividing 109.0 / 119.0
+2025-11-02 17:12:21,925 - app.operations - INFO - Performing division: 109.0 / 119.0
+2025-11-02 17:12:21,925 - __main__ - INFO - Divide operation successful: 109.0 / 119.0 = 0.9159663865546218
