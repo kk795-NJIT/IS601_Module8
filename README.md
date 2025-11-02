@@ -1,432 +1,861 @@
-# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# 📦 Project Setup
+# FastAPI Calculator Application# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# 📦 Project Setup
 
 
 
-A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.
+## Overview
 
 
 
-## 🚀 Quick StartA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.
+A production-grade FastAPI-based calculator web application demonstrating professional software engineering practices including comprehensive test coverage (100%), structured logging, CI/CD automation, RESTful API design, and enterprise-level code quality standards.A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.
 
 
 
-### 1. Clone the Repository
-
-```bash
-
-git clone https://github.com/kk795-NJIT/IS601_Module8.gitA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.---
-
-cd IS601_Module8
-
-```
+## Table of Contents
 
 
+
+- [Features](#features)## 🚀 Quick StartA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.
+
+- [Technology Stack](#technology-stack)
+
+- [Getting Started](#getting-started)
+
+- [API Documentation](#api-documentation)
+
+- [Testing](#testing)### 1. Clone the Repository
+
+- [Project Structure](#project-structure)
+
+- [CI/CD Pipeline](#cicd-pipeline)```bash
+
+
+
+## Featuresgit clone https://github.com/kk795-NJIT/IS601_Module8.gitA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.---
+
+
+
+### Core Functionalitycd IS601_Module8
+
+- **Arithmetic Operations**: Add, subtract, multiply, and divide operations
+
+- **Web Interface**: Interactive calculator UI at http://localhost:8000```
+
+- **RESTful API**: Well-designed API endpoints with proper error handling
+
+- **Input Validation**: Comprehensive validation of user inputs
+
+- **Error Handling**: Graceful error handling for edge cases (e.g., division by zero)
 
 ### 2. Set Up Python Environment## 📋 Project Overview
 
-```bash
+### Quality Assurance
 
-python -m venv venv
+- **100% Code Coverage**: All code paths tested```bash
 
-source venv/bin/activate  # macOS/Linux
+- **50 Comprehensive Tests**:
 
-# orThis project demonstrates professional software engineering practices including:## 📋 Project Overview# 🧩 1. Install Homebrew (Mac Only)
+  - 35 Unit Testspython -m venv venv
 
-venv\Scripts\activate  # Windows
+  - 10 Integration Tests
 
-```- ✅ RESTful API design with FastAPI
+  - 5 End-to-End Testssource venv/bin/activate  # macOS/Linux
+
+- **Automated Testing**: GitHub Actions CI/CD pipeline
+
+- **Code Quality**: Pylint and security scanning# orThis project demonstrates professional software engineering practices including:## 📋 Project Overview# 🧩 1. Install Homebrew (Mac Only)
 
 
 
-### 3. Install Dependencies- ✅ Unit, Integration, and End-to-End Testing (50+ tests with 100% coverage)
+### Logging & Monitoringvenv\Scripts\activate  # Windows
 
-```bash
+- **Structured Logging**: INFO, DEBUG, and ERROR level logging
 
-pip install -r requirements.txt- ✅ Comprehensive logging and monitoring
+- **Multiple Outputs**: Console and file-based logging (app.log)```- ✅ RESTful API design with FastAPI
 
-```
+- **Operation Tracking**: All operations logged with timestamps
 
-- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub ActionsThis project demonstrates professional software engineering practices including:> Skip this step if you're on Windows.
+- **Error Tracking**: Comprehensive error logging and diagnostics
 
-### 4. Run the Application
 
-```bash- ✅ Docker containerization
+
+## Technology Stack### 3. Install Dependencies- ✅ Unit, Integration, and End-to-End Testing (50+ tests with 100% coverage)
+
+
+
+| Category | Technology | Version |```bash
+
+|----------|-----------|---------|
+
+| Framework | FastAPI | 0.115.4 |pip install -r requirements.txt- ✅ Comprehensive logging and monitoring
+
+| Server | Uvicorn | 0.32.0 |
+
+| Validation | Pydantic | 2.9.2 |```
+
+| Templating | Jinja2 | 3.1.4 |
+
+| Testing | Pytest | 8.3.3 |- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub ActionsThis project demonstrates professional software engineering practices including:> Skip this step if you're on Windows.
+
+| Coverage | Coverage.py | 6.0.0 |
+
+| E2E Testing | Playwright | 1.48.0 |### 4. Run the Application
+
+| CI/CD | GitHub Actions | - |
+
+| Language | Python | 3.10+ |```bash- ✅ Docker containerization
+
+| Containerization | Docker | - |
 
 python main.py
+
+## Getting Started
 
 ```- ✅ Professional documentation- ✅ RESTful API design with FastAPI
 
+### Prerequisites
 
 
-Visit: **http://localhost:8000**
+
+- Python 3.10 or higher
+
+- pip (Python package manager)Visit: **http://localhost:8000**
+
+- Git
 
 
+
+### Installation
 
 ## 🧪 Running Tests## 🎯 Assignment Requirements - ✅ COMPLETED- ✅ Unit, Integration, and End-to-End Testing (50+ tests with 100% coverage)Homebrew is a package manager for macOS.  
 
+1. **Clone the Repository**
 
+   ```bash
 
-```bash
+   git clone https://github.com/kk795-NJIT/IS601_Module8.git
+
+   cd IS601_Module8```bash
+
+   ```
 
 # All tests
 
-pytest tests/ -v --cov=app### Submission Completeness (50 Points)- ✅ Comprehensive logging and monitoringYou’ll use it to easily install Git, Python, Docker, etc.
+2. **Create Virtual Environment**
+
+   ```bashpytest tests/ -v --cov=app### Submission Completeness (50 Points)- ✅ Comprehensive logging and monitoringYou’ll use it to easily install Git, Python, Docker, etc.
+
+   python -m venv venv
+
+   ```
 
 
 
-# Unit tests only
+3. **Activate Virtual Environment**# Unit tests only
 
-pytest tests/unit/ -v
+   ```bash
 
-#### ✅ GitHub Repository Link- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
+   # macOS/Linuxpytest tests/unit/ -v
 
-# Integration tests only
+   source venv/bin/activate
+
+   #### ✅ GitHub Repository Link- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
+
+   # Windows
+
+   venv\Scripts\activate# Integration tests only
+
+   ```
 
 pytest tests/integration/ -v- **Repository**: https://github.com/kk795-NJIT/IS601_Module8.git
 
+4. **Install Dependencies**
 
+   ```bash
 
-# E2E tests only- **Branch**: main- ✅ Docker containerization**Install Homebrew:**
+   pip install -r requirements.txt
 
-pytest tests/e2e/ -v
-
-```- **Status**: Public and accessible
-
-
-
-## 📊 Project Status- ✅ Professional documentation
+   ```# E2E tests only- **Branch**: main- ✅ Docker containerization**Install Homebrew:**
 
 
 
-- ✅ Unit Tests: 35 passing (100% coverage)#### ✅ Project Contents
+5. **Run Application**pytest tests/e2e/ -v
 
-- ✅ Integration Tests: 10 passing
+   ```bash
 
-- ✅ E2E Tests: 5 passing- FastAPI application code with logging```bash
+   python main.py```- **Status**: Public and accessible
 
-- ✅ Total: 50/50 tests passing
+   ```
+
+
+
+6. **Access Application**
+
+   - Web Interface: http://localhost:8000## 📊 Project Status- ✅ Professional documentation
+
+   - API Documentation: http://localhost:8000/docs
+
+   - ReDoc Documentation: http://localhost:8000/redoc
+
+
+
+## API Documentation- ✅ Unit Tests: 35 passing (100% coverage)#### ✅ Project Contents
+
+
+
+### Endpoints- ✅ Integration Tests: 10 passing
+
+
+
+#### Addition- ✅ E2E Tests: 5 passing- FastAPI application code with logging```bash
+
+```http
+
+POST /add- ✅ Total: 50/50 tests passing
+
+Content-Type: application/json
 
 - ✅ Code Coverage: 100% on operations module- Comprehensive test suite (unit, integration, E2E)
 
-- ✅ GitHub Actions: CI/CD pipeline operational
+{
 
-- requirements.txt with all dependencies## 🎯 Assignment Requirements - ✅ COMPLETED/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  "a": 10,- ✅ GitHub Actions: CI/CD pipeline operational
 
-## 📁 Project Structure
+  "b": 5
 
-```- GitHub Actions workflow for CI/CD
+}- requirements.txt with all dependencies## 🎯 Assignment Requirements - ✅ COMPLETED/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-IS601_Module8/
+```
+
+**Response**: `{"result": 15}`## 📁 Project Structure
+
+
+
+#### Subtraction```- GitHub Actions workflow for CI/CD
+
+```http
+
+POST /subtractIS601_Module8/
+
+Content-Type: application/json
 
 ├── main.py                          # FastAPI application- Dockerfile for containerization```
 
-├── app/
+{
 
-│   └── operations/__init__.py        # Calculator operations (100% coverage)- Complete documentation
+  "a": 10,├── app/
 
-├── templates/
+  "b": 5
 
-│   └── index.html                   # Frontend UI### Submission Completeness (50 Points)
+}│   └── operations/__init__.py        # Calculator operations (100% coverage)- Complete documentation
 
-├── tests/
+```
+
+**Response**: `{"result": 5}`├── templates/
+
+
+
+#### Multiplication│   └── index.html                   # Frontend UI### Submission Completeness (50 Points)
+
+```http
+
+POST /multiply├── tests/
+
+Content-Type: application/json
 
 │   ├── unit/### Functionality of Web Application and Tests (50 Points)
 
-│   │   └── test_calculator.py        # 35 unit tests
+{
 
-│   ├── integration/**Verify Homebrew:**
+  "a": 10,│   │   └── test_calculator.py        # 35 unit tests
 
-│   │   └── test_fastapi_calculator.py # 10 integration tests
+  "b": 5
 
-│   ├── e2e/#### ✅ Web Application
+}│   ├── integration/**Verify Homebrew:**
 
-│   │   └── test_e2e.py              # 5 E2E tests
+```
+
+**Response**: `{"result": 50}`│   │   └── test_fastapi_calculator.py # 10 integration tests
+
+
+
+#### Division│   ├── e2e/#### ✅ Web Application
+
+```http
+
+POST /divide│   │   └── test_e2e.py              # 5 E2E tests
+
+Content-Type: application/json
 
 │   └── conftest.py                  # Test configuration- **Framework**: FastAPI#### ✅ GitHub Repository Link
 
-├── .github/workflows/
+{
 
-│   └── test.yml                     # GitHub Actions workflow- **Port**: 8000
+  "a": 10,├── .github/workflows/
 
-├── requirements.txt                 # Python dependencies
+  "b": 2
 
-├── pytest.ini                       # Pytest configuration- **Endpoints**: `/` (homepage), `/add`, `/subtract`, `/multiply`, `/divide`- **Repository**: https://github.com/kk795-NJIT/IS601_Module8.git```bash
+}│   └── test.yml                     # GitHub Actions workflow- **Port**: 8000
 
-├── Dockerfile                       # Docker configuration
+```
+
+**Response**: `{"result": 5.0}`├── requirements.txt                 # Python dependencies
+
+
+
+**Error Response (Division by Zero)**:├── pytest.ini                       # Pytest configuration- **Endpoints**: `/` (homepage), `/add`, `/subtract`, `/multiply`, `/divide`- **Repository**: https://github.com/kk795-NJIT/IS601_Module8.git```bash
+
+```http
+
+POST /divide├── Dockerfile                       # Docker configuration
+
+Content-Type: application/json
 
 └── README.md                        # This file- **Status**: Fully operational with error handling
 
+{
+
+  "a": 10,```
+
+  "b": 0
+
+}- **Operations**: All arithmetic operations function correctly- **Branch**: mainbrew --version
+
 ```
 
-- **Operations**: All arithmetic operations function correctly- **Branch**: mainbrew --version
+**Response**: ## 📱 API Endpoints
 
-## 📱 API Endpoints
+```json
 
+{
 
+  "error": "Cannot divide by zero!"
 
-### Addition
+}### Addition
+
+```
 
 ```bash#### ✅ Test Implementation & Results- **Status**: Public and accessible```
 
-curl -X POST "http://localhost:8000/add" \
-
-  -H "Content-Type: application/json" \- **Unit Tests**: 35 passing (100% code coverage)
-
-  -d '{"a": 10, "b": 5}'
-
-```- **Integration Tests**: 10 passing
-
-
-
-### Subtraction- **E2E Tests**: 5 passing
-
-```bash
-
-curl -X POST "http://localhost:8000/subtract" \- **Total**: 50 passing tests#### ✅ Project ContentsIf you see a version number, you're good to go.
-
-  -H "Content-Type: application/json" \
-
-  -d '{"a": 10, "b": 5}'- **Coverage**: 100% on operations module
-
-```
-
-- **CI/CD**: GitHub Actions workflow successful- FastAPI application code with logging
-
-### Multiplication
-
-```bash
-
-curl -X POST "http://localhost:8000/multiply" \
-
-  -H "Content-Type: application/json" \## 🚀 Quick Start- Comprehensive test suite (unit, integration, E2E)---
-
-  -d '{"a": 10, "b": 5}'
-
-```
-
-
-
-### Division### 1. Clone the Repository- requirements.txt with all dependencies
-
-```bash
-
-curl -X POST "http://localhost:8000/divide" \```bash
-
-  -H "Content-Type: application/json" \
-
-  -d '{"a": 10, "b": 2}'git clone https://github.com/kk795-NJIT/IS601_Module8.git- GitHub Actions workflow for CI/CD# 🧩 2. Install and Configure Git
-
-```
-
-cd IS601_Module8
-
-## 🔗 Repository
-
-```- Dockerfile for containerization
-
-- **GitHub**: https://github.com/kk795-NJIT/IS601_Module8.git
-
-- **Branch**: main
-
-- **Visibility**: Public
-
-### 2. Set Up Python Environment- Complete documentation## Install Git
-
-## ✅ Assignment Requirements Met
-
-```bash
-
-- ✅ FastAPI Calculator application
-
-- ✅ Unit, integration, and E2E tests# Create virtual environment
-
-- ✅ Comprehensive logging
-
-- ✅ GitHub Actions CI/CDpython -m venv venv
-
-- ✅ 100% code coverage
-
-- ✅ All tests passing### Functionality of Web Application and Tests (50 Points)- **MacOS (using Homebrew)**
-
-
-
-## 🎓 Learning Outcomes# Activate virtual environment
-
-
-
-**CLO10**: Create, Consume and Test REST APIs using Python# On macOS/Linux:
-
-- ✅ Created FastAPI REST API with 4 endpoints
-
-- ✅ Consumed APIs with integration testssource venv/bin/activate
-
-- ✅ Tested with 50 comprehensive tests
-
-# On Windows:#### ✅ Web Application```bash
-
----
-
-venv\Scripts\activate
-
-**Status**: Production Ready ✅
-
-```- **Framework**: FastAPIbrew install git
-
-
-
-### 3. Install Dependencies- **Port**: 8000```
-
-```bash
-
-pip install -r requirements.txt- **Endpoints**: `/` (homepage), `/add`, `/subtract`, `/multiply`, `/divide`
-
-```
-
-- **Status**: Fully operational with error handling- **Windows**
-
-### 4. Run the Application
-
-```bash- **Operations**: All arithmetic operations function correctly
-
-python main.py
-
-```Download and install [Git for Windows](https://git-scm.com/download/win).  
-
-
-
-The application will start at: **http://localhost:8000**#### ✅ Test Implementation & ResultsAccept the default options during installation.
-
-
-
-## 📱 Web Application Features- **Unit Tests**: 35 passing (100% code coverage)
-
-
-
-### Homepage- **Integration Tests**: 10 passing**Verify Git:**
-
-- **URL**: http://localhost:8000
-
-- **Features**: Interactive calculator UI- **E2E Tests**: 5 passing
-
-- **Supported Operations**: Add, Subtract, Multiply, Divide
-
-- **Total**: 50 passing tests```bash
-
-### API Endpoints
-
-- **Coverage**: 100% on operations modulegit --version
-
-#### Addition
-
-```bash- **CI/CD**: GitHub Actions workflow successful```
+## Testing
 
 curl -X POST "http://localhost:8000/add" \
 
-  -H "Content-Type: application/json" \
+### Running All Tests
 
-  -d '{"a": 10, "b": 5}'
-
-```## 🚀 Quick Start---
-
-**Response**: `{"result": 15}`
-
-
-
-#### Subtraction
-
-```bash### 1. Clone the Repository## Configure Git Globals
-
-curl -X POST "http://localhost:8000/subtract" \
-
-  -H "Content-Type: application/json" \```bash
-
-  -d '{"a": 10, "b": 5}'
-
-```git clone https://github.com/kk795-NJIT/IS601_Module8.gitSet your name and email so Git tracks your commits properly:
-
-**Response**: `{"result": 5}`
-
-cd IS601_Module8
-
-#### Multiplication
-
-```bash``````bash
-
-curl -X POST "http://localhost:8000/multiply" \
-
-  -H "Content-Type: application/json" \git config --global user.name "Your Name"
-
-  -d '{"a": 10, "b": 5}'
-
-```### 2. Set Up Python Environmentgit config --global user.email "your_email@example.com"
-
-**Response**: `{"result": 50}`
-
-```bash```
-
-#### Division
-
-```bash# Create virtual environment
-
-curl -X POST "http://localhost:8000/divide" \
-
-  -H "Content-Type: application/json" \python -m venv venvConfirm the settings:
-
-  -d '{"a": 10, "b": 2}'
-
-```
-
-**Response**: `{"result": 5.0}`
-
-# Activate virtual environment```bash
-
-#### Division by Zero Error Handling
-
-```bash# On macOS/Linux:git config --list
-
-curl -X POST "http://localhost:8000/divide" \
-
-  -H "Content-Type: application/json" \source venv/bin/activate```
-
-  -d '{"a": 10, "b": 0}'
-
-```# On Windows:
-
-**Response**: `{"error": "Cannot divide by zero!"}`
-
-venv\Scripts\activate---
-
-## 🧪 Running Tests
-
-```
-
-### Run All Tests
-
-```bash## Generate SSH Keys and Connect to GitHub
+```bash  -H "Content-Type: application/json" \- **Unit Tests**: 35 passing (100% code coverage)
 
 pytest tests/ -v --cov=app --cov-report=html
 
-```### 3. Install Dependencies
+```  -d '{"a": 10, "b": 5}'
 
 
 
-### Run Unit Tests Only```bash> Only do this once per machine.
+### Running Specific Test Suites```- **Integration Tests**: 10 passing
 
 ```bash
 
-pytest tests/unit/ -vpip install -r requirements.txt
+# Unit Tests
+
+pytest tests/unit/ -v
+
+### Subtraction- **E2E Tests**: 5 passing
+
+# Integration Tests
+
+pytest tests/integration/ -v```bash
+
+
+
+# End-to-End Testscurl -X POST "http://localhost:8000/subtract" \- **Total**: 50 passing tests#### ✅ Project ContentsIf you see a version number, you're good to go.
+
+pytest tests/e2e/ -v
+
+```  -H "Content-Type: application/json" \
+
+
+
+### Coverage Report  -d '{"a": 10, "b": 5}'- **Coverage**: 100% on operations module
+
+```bash
+
+# Generate coverage report```
+
+pytest tests/ --cov=app --cov-report=html
+
+- **CI/CD**: GitHub Actions workflow successful- FastAPI application code with logging
+
+# View in browser
+
+open htmlcov/index.html  # macOS### Multiplication
+
+# or
+
+start htmlcov/index.html  # Windows```bash
 
 ```
 
-```1. Generate a new SSH key:
+curl -X POST "http://localhost:8000/multiply" \
 
-### Run Integration Tests Only
+### Test Results
+
+  -H "Content-Type: application/json" \## 🚀 Quick Start- Comprehensive test suite (unit, integration, E2E)---
+
+| Category | Tests | Status |
+
+|----------|-------|--------|  -d '{"a": 10, "b": 5}'
+
+| Unit Tests | 35 | ✅ All Passing |
+
+| Integration Tests | 10 | ✅ All Passing |```
+
+| E2E Tests | 5 | ✅ All Passing |
+
+| **Total** | **50** | **✅ 100% Pass Rate** |
+
+
+
+### Code Coverage### Division### 1. Clone the Repository- requirements.txt with all dependencies
+
+
+
+``````bash
+
+app/operations/__init__.py
+
+  Lines: 27curl -X POST "http://localhost:8000/divide" \```bash
+
+  Coverage: 100%
+
+  Missed: 0  -H "Content-Type: application/json" \
+
+```
+
+  -d '{"a": 10, "b": 2}'git clone https://github.com/kk795-NJIT/IS601_Module8.git- GitHub Actions workflow for CI/CD# 🧩 2. Install and Configure Git
+
+## Project Structure
+
+```
+
+```
+
+IS601_Module8/cd IS601_Module8
+
+├── main.py                              # FastAPI application entry point
+
+├── app/## 🔗 Repository
+
+│   └── operations/
+
+│       └── __init__.py                  # Core arithmetic operations```- Dockerfile for containerization
+
+├── templates/
+
+│   └── index.html                       # Web UI template- **GitHub**: https://github.com/kk795-NJIT/IS601_Module8.git
+
+├── tests/
+
+│   ├── __init__.py- **Branch**: main
+
+│   ├── conftest.py                      # Pytest configuration
+
+│   ├── unit/- **Visibility**: Public
+
+│   │   ├── __init__.py
+
+│   │   └── test_calculator.py           # Unit tests (35 tests)### 2. Set Up Python Environment- Complete documentation## Install Git
+
+│   ├── integration/
+
+│   │   ├── __init__.py## ✅ Assignment Requirements Met
+
+│   │   └── test_fastapi_calculator.py   # Integration tests (10 tests)
+
+│   └── e2e/```bash
+
+│       ├── __init__.py
+
+│       └── test_e2e.py                  # E2E tests (5 tests)- ✅ FastAPI Calculator application
+
+├── .github/
+
+│   └── workflows/- ✅ Unit, integration, and E2E tests# Create virtual environment
+
+│       └── test.yml                     # GitHub Actions workflow
+
+├── requirements.txt                     # Python dependencies- ✅ Comprehensive logging
+
+├── pytest.ini                           # Pytest configuration
+
+├── Dockerfile                           # Docker configuration- ✅ GitHub Actions CI/CDpython -m venv venv
+
+├── docker-compose.yml                   # Docker Compose configuration
+
+├── LICENSE                              # MIT License- ✅ 100% code coverage
+
+└── README.md                            # This file
+
+```- ✅ All tests passing### Functionality of Web Application and Tests (50 Points)- **MacOS (using Homebrew)**
+
+
+
+## CI/CD Pipeline
+
+
+
+### GitHub Actions Workflow## 🎓 Learning Outcomes# Activate virtual environment
+
+
+
+**File**: `.github/workflows/test.yml`
+
+
+
+**Stages**:**CLO10**: Create, Consume and Test REST APIs using Python# On macOS/Linux:
+
+
+
+1. **Test Job**- ✅ Created FastAPI REST API with 4 endpoints
+
+   - Checkout code
+
+   - Setup Python 3.10- ✅ Consumed APIs with integration testssource venv/bin/activate
+
+   - Cache dependencies
+
+   - Install requirements- ✅ Tested with 50 comprehensive tests
+
+   - Run unit tests with coverage
+
+   - Run integration tests# On Windows:#### ✅ Web Application```bash
+
+   - Run E2E tests
+
+   - Upload test results---
+
+   - Upload coverage reports
+
+venv\Scripts\activate
+
+2. **Security Job**
+
+   - Build Docker image**Status**: Production Ready ✅
+
+   - Run Trivy vulnerability scanning
+
+   - Validate against security policies```- **Framework**: FastAPIbrew install git
+
+
+
+3. **Code Quality Job**
+
+   - Run Pylint checks
+
+   - Validate code standards### 3. Install Dependencies- **Port**: 8000```
+
+
+
+### Triggers```bash
+
+
+
+- Push to main branchpip install -r requirements.txt- **Endpoints**: `/` (homepage), `/add`, `/subtract`, `/multiply`, `/divide`
+
+- Pull requests to main branch
+
+```
+
+### Status
+
+- **Status**: Fully operational with error handling- **Windows**
+
+- **Current Status**: ✅ Passing
+
+- **Test Results**: All 50 tests passing### 4. Run the Application
+
+- **Coverage**: 100% on operations module
+
+- **Security**: No critical vulnerabilities```bash- **Operations**: All arithmetic operations function correctly
+
+
+
+## Docker Supportpython main.py
+
+
+
+### Build Image```Download and install [Git for Windows](https://git-scm.com/download/win).  
 
 ```bash
 
-pytest tests/integration/ -v
+docker build -t fastapi-calculator .
 
-```### 4. Run the Application```bash
+```
+
+The application will start at: **http://localhost:8000**#### ✅ Test Implementation & ResultsAccept the default options during installation.
+
+### Run Container
+
+```bash
+
+docker run -p 8000:8000 fastapi-calculator
+
+```## 📱 Web Application Features- **Unit Tests**: 35 passing (100% code coverage)
+
+
+
+### Using Docker Compose
+
+```bash
+
+docker-compose up### Homepage- **Integration Tests**: 10 passing**Verify Git:**
+
+```
+
+- **URL**: http://localhost:8000
+
+## Logging
+
+- **Features**: Interactive calculator UI- **E2E Tests**: 5 passing
+
+### Configuration
+
+- **Supported Operations**: Add, Subtract, Multiply, Divide
+
+- **Level**: INFO (with DEBUG available)
+
+- **Output**: Console and file (`app.log`)- **Total**: 50 passing tests```bash
+
+- **Format**: `%(asctime)s - %(name)s - %(levelname)s - %(message)s`
+
+### API Endpoints
+
+### Example Output
+
+- **Coverage**: 100% on operations modulegit --version
+
+```
+
+2025-11-02 10:30:15 - app.operations - INFO - Performing addition: 10 + 5#### Addition
+
+2025-11-02 10:30:15 - app.operations - DEBUG - Addition result: 15
+
+2025-11-02 10:30:16 - main - INFO - POST /add - Adding 10.0 + 5.0```bash- **CI/CD**: GitHub Actions workflow successful```
+
+```
+
+curl -X POST "http://localhost:8000/add" \
+
+## Repository Information
+
+  -H "Content-Type: application/json" \
+
+| Property | Value |
+
+|----------|-------|  -d '{"a": 10, "b": 5}'
+
+| **Owner** | kk795-NJIT |
+
+| **Repository** | IS601_Module8 |```## 🚀 Quick Start---
+
+| **URL** | https://github.com/kk795-NJIT/IS601_Module8.git |
+
+| **Branch** | main |**Response**: `{"result": 15}`
+
+| **Visibility** | Public |
+
+| **License** | MIT |
+
+
+
+## Learning Outcomes#### Subtraction
+
+
+
+This project addresses **CLO10: Create, Consume and Test REST APIs using Python**```bash### 1. Clone the Repository## Configure Git Globals
+
+
+
+### Skills Demonstratedcurl -X POST "http://localhost:8000/subtract" \
+
+
+
+- ✅ **Created**: RESTful API with FastAPI (4 endpoints)  -H "Content-Type: application/json" \```bash
+
+- ✅ **Consumed**: API endpoints tested via TestClient
+
+- ✅ **Tested**: 50 comprehensive tests with 100% coverage  -d '{"a": 10, "b": 5}'
+
+- ✅ **Designed**: Proper request/response models with Pydantic
+
+- ✅ **Validated**: Input validation and error handling```git clone https://github.com/kk795-NJIT/IS601_Module8.gitSet your name and email so Git tracks your commits properly:
+
+- ✅ **Documented**: API documentation with Swagger/ReDoc
+
+- ✅ **Deployed**: CI/CD automation with GitHub Actions**Response**: `{"result": 5}`
+
+- ✅ **Monitored**: Comprehensive logging and error tracking
+
+cd IS601_Module8
+
+## Code Quality Standards
+
+#### Multiplication
+
+- ✅ PEP 8 Compliant
+
+- ✅ Type Hints Implemented```bash``````bash
+
+- ✅ Docstrings Present
+
+- ✅ Error Handling Comprehensivecurl -X POST "http://localhost:8000/multiply" \
+
+- ✅ DRY Principles Followed
+
+- ✅ SOLID Principles Applied  -H "Content-Type: application/json" \git config --global user.name "Your Name"
+
+- ✅ Security Best Practices
+
+  -d '{"a": 10, "b": 5}'
+
+## Performance Metrics
+
+```### 2. Set Up Python Environmentgit config --global user.email "your_email@example.com"
+
+| Metric | Value |
+
+|--------|-------|**Response**: `{"result": 50}`
+
+| Unit Test Execution Time | ~0.1s |
+
+| Integration Test Execution Time | ~0.7s |```bash```
+
+| E2E Test Execution Time | ~30s |
+
+| Total Test Suite Time | ~31s |#### Division
+
+| Code Coverage | 100% |
+
+| Lines of Code (Operations) | 27 |```bash# Create virtual environment
+
+| Test-to-Code Ratio | 2:1 |
+
+curl -X POST "http://localhost:8000/divide" \
+
+## Troubleshooting
+
+  -H "Content-Type: application/json" \python -m venv venvConfirm the settings:
+
+### Port 8000 Already in Use
+
+```bash  -d '{"a": 10, "b": 2}'
+
+# Kill process on port 8000 (macOS/Linux)
+
+lsof -ti:8000 | xargs kill -9```
+
+
+
+# Then restart the application**Response**: `{"result": 5.0}`
+
+python main.py
+
+```# Activate virtual environment```bash
+
+
+
+### Virtual Environment Issues#### Division by Zero Error Handling
+
+```bash
+
+# Deactivate current environment```bash# On macOS/Linux:git config --list
+
+deactivate
+
+curl -X POST "http://localhost:8000/divide" \
+
+# Remove and recreate
+
+rm -rf venv  -H "Content-Type: application/json" \source venv/bin/activate```
+
+python -m venv venv
+
+source venv/bin/activate  -d '{"a": 10, "b": 0}'
+
+pip install -r requirements.txt
+
+``````# On Windows:
+
+
+
+### Test Failures**Response**: `{"error": "Cannot divide by zero!"}`
+
+```bash
+
+# Run with verbose outputvenv\Scripts\activate---
+
+pytest tests/ -vv
+
+## 🧪 Running Tests
+
+# Run with print statements
+
+pytest tests/ -s```
+
+
+
+# Run specific test### Run All Tests
+
+pytest tests/unit/test_calculator.py::test_add_two_positive_integers -v
+
+``````bash## Generate SSH Keys and Connect to GitHub
+
+
+
+## Contributingpytest tests/ -v --cov=app --cov-report=html
+
+
+
+This is an academic project. For questions or issues, please refer to the GitHub repository.```### 3. Install Dependencies
+
+
+
+## License
+
+
+
+This project is licensed under the MIT License - see the LICENSE file for details.### Run Unit Tests Only```bash> Only do this once per machine.
+
+
+
+## Support```bash
+
+
+
+For technical support or questions:pytest tests/unit/ -vpip install -r requirements.txt
+
+1. Review the GitHub Actions workflow status
+
+2. Check application logs in `app.log````
+
+3. Run tests with verbose output for diagnostics
+
+4. Review inline code documentation```1. Generate a new SSH key:
+
+
+
+---### Run Integration Tests Only
+
+
+
+**Project Status**: Production Ready ✅```bash
+
+
+
+**Last Updated**: November 2, 2025pytest tests/integration/ -v
+
+
+
+**Version**: 1.0.0```### 4. Run the Application```bash
+
 
 
 
