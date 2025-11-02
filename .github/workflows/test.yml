@@ -6,6 +6,11 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
 jobs:
   test:
     name: Run Tests
@@ -70,11 +75,20 @@ jobs:
           retention-days: 30
       
       - name: Publish Test Results
-        if: always()
+        if: always() && github.event_name == 'pull_request'
         uses: EnricoMi/publish-unit-test-result-action@v2
         with:
           files: test-results/**/*.xml
           check_name: Test Results
+      
+      - name: Check Test Success
+        if: always()
+        run: |
+          if [ ! -f test-results/unit-junit.xml ]; then
+            echo "Error: Unit test results not found"
+            exit 1
+          fi
+          echo "✅ All test files generated successfully"
 
   security:
     name: Security Scan
