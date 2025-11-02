@@ -1,4 +1,4 @@
-# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# 📦 Project Setup
+# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# 📦 Project Setup
 
 
 
@@ -6,133 +6,269 @@ A comprehensive FastAPI-based calculator application with full test coverage, lo
 
 
 
-**📸 [See SUBMISSION_GUIDE.md for screenshots and submission instructions →](SUBMISSION_GUIDE.md)**A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.---
+## 🚀 Quick StartA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.
 
 
 
-## 📋 Project Overview
-
-
-
-This project demonstrates professional software engineering practices including:## 📋 Project Overview# 🧩 1. Install Homebrew (Mac Only)
-
-- ✅ RESTful API design with FastAPI
-
-- ✅ Unit, Integration, and End-to-End Testing (50+ tests with 100% coverage)
-
-- ✅ Comprehensive logging and monitoring
-
-- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub ActionsThis project demonstrates professional software engineering practices including:> Skip this step if you're on Windows.
-
-- ✅ Docker containerization
-
-- ✅ Professional documentation- ✅ RESTful API design with FastAPI
-
-
-
-## 🎯 Assignment Requirements - ✅ COMPLETED- ✅ Unit, Integration, and End-to-End Testing (50+ tests with 100% coverage)Homebrew is a package manager for macOS.  
-
-
-
-### Submission Completeness (50 Points)- ✅ Comprehensive logging and monitoringYou’ll use it to easily install Git, Python, Docker, etc.
-
-
-
-#### ✅ GitHub Repository Link- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
-
-- **Repository**: https://github.com/kk795-NJIT/IS601_Module8.git
-
-- **Branch**: main- ✅ Docker containerization**Install Homebrew:**
-
-- **Status**: Public and accessible
-
-- ✅ Professional documentation
-
-#### ✅ Project Contents
-
-- FastAPI application code with logging```bash
-
-- Comprehensive test suite (unit, integration, E2E)
-
-- requirements.txt with all dependencies## 🎯 Assignment Requirements - ✅ COMPLETED/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-- GitHub Actions workflow for CI/CD
-
-- Dockerfile for containerization```
-
-- Complete documentation
-
-### Submission Completeness (50 Points)
-
-### Functionality of Web Application and Tests (50 Points)
-
-**Verify Homebrew:**
-
-#### ✅ Web Application
-
-- **Framework**: FastAPI#### ✅ GitHub Repository Link
-
-- **Port**: 8000
-
-- **Endpoints**: `/` (homepage), `/add`, `/subtract`, `/multiply`, `/divide`- **Repository**: https://github.com/kk795-NJIT/IS601_Module8.git```bash
-
-- **Status**: Fully operational with error handling
-
-- **Operations**: All arithmetic operations function correctly- **Branch**: mainbrew --version
-
-
-
-#### ✅ Test Implementation & Results- **Status**: Public and accessible```
-
-- **Unit Tests**: 35 passing (100% code coverage)
-
-- **Integration Tests**: 10 passing
-
-- **E2E Tests**: 5 passing
-
-- **Total**: 50 passing tests#### ✅ Project ContentsIf you see a version number, you're good to go.
-
-- **Coverage**: 100% on operations module
-
-- **CI/CD**: GitHub Actions workflow successful- FastAPI application code with logging
-
-
-
-## 🚀 Quick Start- Comprehensive test suite (unit, integration, E2E)---
-
-
-
-### 1. Clone the Repository- requirements.txt with all dependencies
+### 1. Clone the Repository
 
 ```bash
 
-git clone https://github.com/kk795-NJIT/IS601_Module8.git- GitHub Actions workflow for CI/CD# 🧩 2. Install and Configure Git
+git clone https://github.com/kk795-NJIT/IS601_Module8.gitA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.---
 
 cd IS601_Module8
 
-```- Dockerfile for containerization
+```
 
 
 
-### 2. Set Up Python Environment- Complete documentation## Install Git
+### 2. Set Up Python Environment## 📋 Project Overview
 
 ```bash
 
-# Create virtual environment
-
 python -m venv venv
 
-### Functionality of Web Application and Tests (50 Points)- **MacOS (using Homebrew)**
+source venv/bin/activate  # macOS/Linux
 
-# Activate virtual environment
+# orThis project demonstrates professional software engineering practices including:## 📋 Project Overview# 🧩 1. Install Homebrew (Mac Only)
 
-# On macOS/Linux:
+venv\Scripts\activate  # Windows
 
-source venv/bin/activate
+```- ✅ RESTful API design with FastAPI
+
+
+
+### 3. Install Dependencies- ✅ Unit, Integration, and End-to-End Testing (50+ tests with 100% coverage)
+
+```bash
+
+pip install -r requirements.txt- ✅ Comprehensive logging and monitoring
+
+```
+
+- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub ActionsThis project demonstrates professional software engineering practices including:> Skip this step if you're on Windows.
+
+### 4. Run the Application
+
+```bash- ✅ Docker containerization
+
+python main.py
+
+```- ✅ Professional documentation- ✅ RESTful API design with FastAPI
+
+
+
+Visit: **http://localhost:8000**
+
+
+
+## 🧪 Running Tests## 🎯 Assignment Requirements - ✅ COMPLETED- ✅ Unit, Integration, and End-to-End Testing (50+ tests with 100% coverage)Homebrew is a package manager for macOS.  
+
+
+
+```bash
+
+# All tests
+
+pytest tests/ -v --cov=app### Submission Completeness (50 Points)- ✅ Comprehensive logging and monitoringYou’ll use it to easily install Git, Python, Docker, etc.
+
+
+
+# Unit tests only
+
+pytest tests/unit/ -v
+
+#### ✅ GitHub Repository Link- ✅ Continuous Integration/Continuous Deployment (CI/CD) with GitHub Actions
+
+# Integration tests only
+
+pytest tests/integration/ -v- **Repository**: https://github.com/kk795-NJIT/IS601_Module8.git
+
+
+
+# E2E tests only- **Branch**: main- ✅ Docker containerization**Install Homebrew:**
+
+pytest tests/e2e/ -v
+
+```- **Status**: Public and accessible
+
+
+
+## 📊 Project Status- ✅ Professional documentation
+
+
+
+- ✅ Unit Tests: 35 passing (100% coverage)#### ✅ Project Contents
+
+- ✅ Integration Tests: 10 passing
+
+- ✅ E2E Tests: 5 passing- FastAPI application code with logging```bash
+
+- ✅ Total: 50/50 tests passing
+
+- ✅ Code Coverage: 100% on operations module- Comprehensive test suite (unit, integration, E2E)
+
+- ✅ GitHub Actions: CI/CD pipeline operational
+
+- requirements.txt with all dependencies## 🎯 Assignment Requirements - ✅ COMPLETED/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+## 📁 Project Structure
+
+```- GitHub Actions workflow for CI/CD
+
+IS601_Module8/
+
+├── main.py                          # FastAPI application- Dockerfile for containerization```
+
+├── app/
+
+│   └── operations/__init__.py        # Calculator operations (100% coverage)- Complete documentation
+
+├── templates/
+
+│   └── index.html                   # Frontend UI### Submission Completeness (50 Points)
+
+├── tests/
+
+│   ├── unit/### Functionality of Web Application and Tests (50 Points)
+
+│   │   └── test_calculator.py        # 35 unit tests
+
+│   ├── integration/**Verify Homebrew:**
+
+│   │   └── test_fastapi_calculator.py # 10 integration tests
+
+│   ├── e2e/#### ✅ Web Application
+
+│   │   └── test_e2e.py              # 5 E2E tests
+
+│   └── conftest.py                  # Test configuration- **Framework**: FastAPI#### ✅ GitHub Repository Link
+
+├── .github/workflows/
+
+│   └── test.yml                     # GitHub Actions workflow- **Port**: 8000
+
+├── requirements.txt                 # Python dependencies
+
+├── pytest.ini                       # Pytest configuration- **Endpoints**: `/` (homepage), `/add`, `/subtract`, `/multiply`, `/divide`- **Repository**: https://github.com/kk795-NJIT/IS601_Module8.git```bash
+
+├── Dockerfile                       # Docker configuration
+
+└── README.md                        # This file- **Status**: Fully operational with error handling
+
+```
+
+- **Operations**: All arithmetic operations function correctly- **Branch**: mainbrew --version
+
+## 📱 API Endpoints
+
+
+
+### Addition
+
+```bash#### ✅ Test Implementation & Results- **Status**: Public and accessible```
+
+curl -X POST "http://localhost:8000/add" \
+
+  -H "Content-Type: application/json" \- **Unit Tests**: 35 passing (100% code coverage)
+
+  -d '{"a": 10, "b": 5}'
+
+```- **Integration Tests**: 10 passing
+
+
+
+### Subtraction- **E2E Tests**: 5 passing
+
+```bash
+
+curl -X POST "http://localhost:8000/subtract" \- **Total**: 50 passing tests#### ✅ Project ContentsIf you see a version number, you're good to go.
+
+  -H "Content-Type: application/json" \
+
+  -d '{"a": 10, "b": 5}'- **Coverage**: 100% on operations module
+
+```
+
+- **CI/CD**: GitHub Actions workflow successful- FastAPI application code with logging
+
+### Multiplication
+
+```bash
+
+curl -X POST "http://localhost:8000/multiply" \
+
+  -H "Content-Type: application/json" \## 🚀 Quick Start- Comprehensive test suite (unit, integration, E2E)---
+
+  -d '{"a": 10, "b": 5}'
+
+```
+
+
+
+### Division### 1. Clone the Repository- requirements.txt with all dependencies
+
+```bash
+
+curl -X POST "http://localhost:8000/divide" \```bash
+
+  -H "Content-Type: application/json" \
+
+  -d '{"a": 10, "b": 2}'git clone https://github.com/kk795-NJIT/IS601_Module8.git- GitHub Actions workflow for CI/CD# 🧩 2. Install and Configure Git
+
+```
+
+cd IS601_Module8
+
+## 🔗 Repository
+
+```- Dockerfile for containerization
+
+- **GitHub**: https://github.com/kk795-NJIT/IS601_Module8.git
+
+- **Branch**: main
+
+- **Visibility**: Public
+
+### 2. Set Up Python Environment- Complete documentation## Install Git
+
+## ✅ Assignment Requirements Met
+
+```bash
+
+- ✅ FastAPI Calculator application
+
+- ✅ Unit, integration, and E2E tests# Create virtual environment
+
+- ✅ Comprehensive logging
+
+- ✅ GitHub Actions CI/CDpython -m venv venv
+
+- ✅ 100% code coverage
+
+- ✅ All tests passing### Functionality of Web Application and Tests (50 Points)- **MacOS (using Homebrew)**
+
+
+
+## 🎓 Learning Outcomes# Activate virtual environment
+
+
+
+**CLO10**: Create, Consume and Test REST APIs using Python# On macOS/Linux:
+
+- ✅ Created FastAPI REST API with 4 endpoints
+
+- ✅ Consumed APIs with integration testssource venv/bin/activate
+
+- ✅ Tested with 50 comprehensive tests
 
 # On Windows:#### ✅ Web Application```bash
 
+---
+
 venv\Scripts\activate
+
+**Status**: Production Ready ✅
 
 ```- **Framework**: FastAPIbrew install git
 
