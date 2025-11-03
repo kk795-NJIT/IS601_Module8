@@ -7,18 +7,18 @@ import pytest  # Import the pytest framework for writing and running tests
 @pytest.mark.e2e
 def test_hello_world(page, fastapi_server):
     """
-    Test that the homepage displays "Hello World".
+    Test that the homepage displays "Calculator".
 
     This test verifies that when a user navigates to the homepage of the application,
-    the main header (`<h1>`) correctly displays the text "Hello World". This ensures
+    the main header (`<h1>`) correctly displays the text "Calculator". This ensures
     that the server is running and serving the correct template.
     """
     # Navigate the browser to the homepage URL of the FastAPI application.
     page.goto('http://localhost:8000')
     
-    # Use an assertion to check that the text within the first <h1> tag is exactly "Hello World".
+    # Use an assertion to check that the text within the first <h1> tag is exactly "Calculator".
     # If the text does not match, the test will fail.
-    assert page.inner_text('h1') == 'Hello World'
+    assert page.inner_text('h1') == 'Calculator'
 
 @pytest.mark.e2e
 def test_calculator_add(page, fastapi_server):
@@ -41,9 +41,9 @@ def test_calculator_add(page, fastapi_server):
     # Click the button that has the exact text "Add". This triggers the addition operation.
     page.click('button:text("Add")')
     
-    # Use an assertion to check that the text within the result div (with id 'result') is exactly "Result: 15".
+    # Use an assertion to check that the text within the result div (with id 'result') is exactly "15".
     # This verifies that the addition operation was performed correctly and the result is displayed as expected.
-    assert page.inner_text('#result') == 'Calculation Result: 15'
+    assert page.inner_text('#result') == '15'
 
 @pytest.mark.e2e
 def test_calculator_divide_by_zero(page, fastapi_server):
@@ -83,7 +83,7 @@ def test_calculator_subtract(page, fastapi_server):
     page.fill('#a', '20')
     page.fill('#b', '8')
     page.click('button:text("Subtract")')
-    assert page.inner_text('#result') == 'Calculation Result: 12'
+    assert page.inner_text('#result') == '12'
 
 @pytest.mark.e2e
 def test_calculator_multiply(page, fastapi_server):
@@ -96,7 +96,7 @@ def test_calculator_multiply(page, fastapi_server):
     page.fill('#a', '7')
     page.fill('#b', '6')
     page.click('button:text("Multiply")')
-    assert page.inner_text('#result') == 'Calculation Result: 42'
+    assert page.inner_text('#result') == '42'
 
 @pytest.mark.e2e
 def test_calculator_divide(page, fastapi_server):
@@ -109,7 +109,7 @@ def test_calculator_divide(page, fastapi_server):
     page.fill('#a', '20')
     page.fill('#b', '4')
     page.click('button:text("Divide")')
-    assert page.inner_text('#result') == 'Calculation Result: 5'
+    assert page.inner_text('#result') == '5'
 
 @pytest.mark.e2e
 def test_calculator_with_floats(page, fastapi_server):
@@ -122,5 +122,5 @@ def test_calculator_with_floats(page, fastapi_server):
     page.fill('#a', '5.5')
     page.fill('#b', '2.5')
     page.click('button:text("Add")')
-    assert page.inner_text('#result') == 'Calculation Result: 8'
+    assert page.inner_text('#result') == '8'
 
