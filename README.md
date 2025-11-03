@@ -1,403 +1,73 @@
-# FastAPI Calculator# FastAPI Calculator Application# FastAPI Calculator Application# FastAPI Calculator Application# FastAPI Calculator Application# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# FastAPI Calculator - Module 8 Assignment# 📦 Project Setup
+## FastAPI Calculator
 
+[![CI](https://github.com/kk795-NJIT/IS601_Module8/actions/workflows/test.yml/badge.svg)](https://github.com/kk795-NJIT/IS601_Module8/actions/workflows/test.yml)
 
+A small, professional FastAPI calculator with a modern web UI, REST API, logging, and automated tests/CI.
 
-Professional calculator web application with REST API, comprehensive testing, and CI/CD.
+Status: v1.0.0 • License: MIT
 
+## Overview
 
+- Four operations: add, subtract, multiply, divide
+- Web UI at http://localhost:8000
+- REST API with validation and error handling (division-by-zero safe)
+- Tests: unit, integration, and E2E (CI installs Playwright browsers)
+- Logging to console and file (app.log)
 
-## Quick StartA professional FastAPI-based calculator web application with comprehensive testing, logging, and CI/CD automation.
+## Quick start
 
+1) Clone and set up
+- git clone https://github.com/kk795-NJIT/IS601_Module8.git
+- cd IS601_Module8
+- python -m venv venv && source venv/bin/activate
+- pip install -r requirements.txt
 
+2) Run
+- python main.py
+- Open http://localhost:8000
 
-```bash
+## API endpoints
 
-git clone https://github.com/kk795-NJIT/IS601_Module8.git
+- POST /add
+- POST /subtract
+- POST /multiply
+- POST /divide
 
-cd IS601_Module8## Quick Start[![CI/CD Pipeline](https://github.com/kk795-NJIT/IS601_Module8/actions/workflows/test.yml/badge.svg)](https://github.com/kk795-NJIT/IS601_Module8/actions/workflows/test.yml)
-
-python -m venv venv
-
-source venv/bin/activate
-
-pip install -r requirements.txt
-
-python main.py```bash[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-
-```
-
-# Clone repository
-
-Visit: http://localhost:8000
-
-git clone https://github.com/kk795-NJIT/IS601_Module8.git[![FastAPI](https://img.shields.io/badge/FastAPI-0.115.4-009688.svg)](https://fastapi.tiangolo.com)## Overview
-
-## Features
-
-cd IS601_Module8
-
-- REST API with 4 arithmetic operations
-
-- Modern gradient UI[![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen.svg)](https://github.com/kk795-NJIT/IS601_Module8)
-
-- Input validation and error handling
-
-- Comprehensive logging# Setup environment
-
-- 52 tests with 100% coverage
-
-- Automated CI/CD pipelinepython -m venv venv[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-
-
-## API Usagesource venv/bin/activate  # Windows: venv\Scripts\activate
-
-
-
-```bash
-
-curl -X POST http://localhost:8000/add -H "Content-Type: application/json" -d '{"a": 10, "b": 5}'
-
-```# Install dependencies
-
-
-
-## Testingpip install -r requirements.txtA production-grade RESTful calculator web application built with FastAPI, demonstrating enterprise software engineering practices including comprehensive test coverage, structured logging, CI/CD automation, and modern web design.A production-grade FastAPI-based calculator web application demonstrating professional software engineering practices including comprehensive test coverage (100%), structured logging, CI/CD automation, RESTful API design, and enterprise-level code quality standards.## Overview
-
-
-
-```bash
-
-pytest tests/ -v --cov=app
-
-```# Run application
-
-
-
-**Results**: 52/52 tests passing | 100% coveragepython main.py
-
-
-
-## Project Structure```## 📋 Table of Contents
-
-
-
-```
-
-├── main.py                    # FastAPI app
-
-├── app/operations/            # Calculator logicVisit: http://localhost:8000
-
-├── templates/                 # Web UI
-
-├── tests/                     # Test suite
-
-└── .github/workflows/         # CI/CD
-
-```## Features- [Overview](#overview)## Table of Contents
-
-
-
-## Tech Stack
-
-
-
-- FastAPI 0.115.4- **REST API**: Four arithmetic endpoints (`/add`, `/subtract`, `/multiply`, `/divide`)- [Features](#features)
-
-- Pytest 8.3.3
-
-- Playwright 1.48.0- **Modern UI**: Professional web interface with gradient design
-
-- GitHub Actions
-
-- **Error Handling**: Division by zero protection and input validation- [Technology Stack](#technology-stack)
-
-## Assignment
-
-- **Logging**: Comprehensive logging to console and file (`app.log`)
-
-Module 8: FastAPI Calculator - **100/100 Points**
-
-- **Testing**: 52 tests with 100% code coverage- [Getting Started](#getting-started)
-
-✅ All requirements met
-
-- Working application with 4 operations- **CI/CD**: Automated testing via GitHub Actions
-
-- 52 comprehensive tests
-
-- CI/CD pipeline operational- [API Documentation](#api-documentation)- [Features](#features)A production-grade FastAPI-based calculator web application demonstrating professional software engineering practices including comprehensive test coverage (100%), structured logging, CI/CD automation, RESTful API design, and enterprise-level code quality standards.A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.
-
-- Professional documentation
-
-## API Endpoints
-
-## Repository
-
-- [Testing](#testing)
-
-https://github.com/kk795-NJIT/IS601_Module8.git
-
-```bash
-
-**Status**: Production Ready | **Release**: v1.0.0
-
-# Addition- [CI/CD Pipeline](#cicd-pipeline)- [Technology Stack](#technology-stack)
-
-curl -X POST http://localhost:8000/add -H "Content-Type: application/json" -d '{"a": 10, "b": 5}'
-
-- [Project Structure](#project-structure)
-
-# Subtraction
-
-curl -X POST http://localhost:8000/subtract -H "Content-Type: application/json" -d '{"a": 10, "b": 5}'- [License](#license)- [Getting Started](#getting-started)
-
-
-
-# Multiplication
-
-curl -X POST http://localhost:8000/multiply -H "Content-Type: application/json" -d '{"a": 10, "b": 5}'
-
-## 🎯 Overview- [API Documentation](#api-documentation)
-
-# Division
-
-curl -X POST http://localhost:8000/divide -H "Content-Type: application/json" -d '{"a": 10, "b": 2}'
-
-```
-
-This project implements a professional FastAPI-based calculator application that addresses **CLO10: Create, Consume and Test REST APIs using Python**. The application demonstrates mastery of modern web development practices with 100% code coverage, automated testing, and continuous integration.- [Testing](#testing)## Table of Contents
+Example
+- Request: {"a": 10, "b": 5}
+- Response: {"result": 15}
 
 ## Testing
 
+- Unit + integration: pytest -v tests/unit tests/integration
+- Coverage (core operations): 100%
+- Note: E2E tests require Playwright browsers (installed in CI). You can run them locally after installing browsers.
 
-
-```bash
-
-# Run all tests### Key Highlights- [Project Structure](#project-structure)
-
-pytest tests/ -v
-
-
-
-# Run with coverage
-
-pytest tests/ --cov=app --cov-report=html- **52 Comprehensive Tests** (35 unit + 10 integration + 7 E2E)- [CI/CD Pipeline](#cicd-pipeline)
-
-
-
-# Run specific test suites- **100% Code Coverage** on core operations module
-
-pytest tests/unit/ -v          # Unit tests
-
-pytest tests/integration/ -v   # Integration tests- **Professional Modern UI** with responsive design
-
-pytest tests/e2e/ -v          # E2E tests
-
-```- **GitHub Actions CI/CD** with automated testing
-
-
-
-### Test Results- **Production-Ready** code with logging and error handling## Features- [Features](#features)## 🚀 Quick StartA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.
-
-- **Unit Tests**: 35 passing
-
-- **Integration Tests**: 10 passing
-
-- **E2E Tests**: 7 passing
-
-- **Total**: 52/52 passing## ✨ Features
-
-- **Coverage**: 100% on operations module
-
-
-
-## Project Structure
-
-### Core Functionality### Core Functionality- [Technology Stack](#technology-stack)
+## Project structure
 
 ```
-
 IS601_Module8/
+├── main.py                    # FastAPI app and routes
+├── app/
+│   └── operations/__init__.py # Arithmetic operations
+├── templates/
+│   └── index.html             # Web UI
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── e2e/
+└── .github/workflows/test.yml # CI pipeline
+```
 
-├── main.py                              # FastAPI application
+## Tech
 
-├── app/- **Arithmetic Operations**: Addition, subtraction, multiplication, and division- **Arithmetic Operations**: Add, subtract, multiply, and divide operations
-
-│   └── operations/__init__.py           # Calculator operations
-
-├── templates/- **RESTful API**: Well-designed endpoints with proper HTTP methods
-
-│   └── index.html                       # Web UI
-
-├── tests/- **Web Interface**: Modern, responsive calculator UI- **Web Interface**: Interactive calculator UI at http://localhost:8000- [Getting Started](#getting-started)
-
-│   ├── unit/test_calculator.py          # Unit tests
-
-│   ├── integration/test_fastapi_calculator.py- **Input Validation**: Comprehensive validation using Pydantic models
-
-│   └── e2e/test_e2e.py                  # E2E tests
-
-├── .github/workflows/test.yml           # CI/CD pipeline- **Error Handling**: Graceful handling of edge cases (division by zero, invalid inputs)- **RESTful API**: Well-designed API endpoints with proper error handling
-
-└── requirements.txt                     # Dependencies
-
-```- **API Documentation**: Auto-generated Swagger UI and ReDoc interfaces
-
-
-
-## Technology Stack- **Input Validation**: Comprehensive validation of user inputs- [API Documentation](#api-documentation)
-
-
-
-| Component | Technology |### Quality & Reliability
-
-|-----------|-----------|
-
-| Framework | FastAPI 0.115.4 |- **Error Handling**: Graceful error handling for edge cases (e.g., division by zero)
-
-| Server | Uvicorn 0.32.0 |
-
-| Testing | Pytest 8.3.3 |- **100% Test Coverage**: Every code path tested
-
-| E2E Testing | Playwright 1.48.0 |
-
-| CI/CD | GitHub Actions |- **Automated CI/CD**: GitHub Actions pipeline with multiple quality checks- [Testing](#testing)### 1. Clone the Repository
-
-
-
-## Assignment Requirements- **Security Scanning**: Trivy vulnerability detection
-
-
-
-**Module 8 FastAPI Calculator - 100/100 Points**- **Code Quality**: Pylint checks and PEP 8 compliance### Quality Assurance
-
-
-
-✅ **Submission Completeness (50 Points)**- **Comprehensive Logging**: INFO, DEBUG, and ERROR level tracking
-
-- GitHub repository with all required files
-
-- Professional documentation- **Type Safety**: Full type hints throughout codebase- **100% Code Coverage**: All code paths tested- [Project Structure](#project-structure)
-
-- Descriptive commit history
-
-
-
-✅ **Functionality & Testing (50 Points)**
-
-- Working FastAPI calculator application## 🛠️ Technology Stack- **52 Comprehensive Tests**:
-
-- Comprehensive test suite (52 tests passing)
-
-- GitHub Actions CI/CD pipeline operational
-
-- 100% code coverage achieved
-
-### Backend  - 35 Unit Tests- [CI/CD Pipeline](#cicd-pipeline)```bash
-
-## Learning Outcomes
-
-| Technology | Version | Purpose |
-
-**CLO10: Create, Consume and Test REST APIs using Python**
-
-- ✅ Created FastAPI REST API with proper validation|-----------|---------|---------|  - 10 Integration Tests
-
-- ✅ Consumed APIs through integration testing
-
-- ✅ Tested comprehensively with 100% coverage| [FastAPI](https://fastapi.tiangolo.com/) | 0.115.4 | Modern web framework |
-
-
-
-## Repository| [Uvicorn](https://www.uvicorn.org/) | 0.32.0 | ASGI server |  - 7 End-to-End Tests
-
-
-
-- **GitHub**: https://github.com/kk795-NJIT/IS601_Module8.git| [Pydantic](https://pydantic-docs.helpmanual.io/) | 2.9.2 | Data validation |
-
-- **Release**: v1.0.0
-
-- **Status**: Production Ready| [Jinja2](https://jinja.palletsprojects.com/) | 3.1.4 | Template engine |- **Automated Testing**: GitHub Actions CI/CD pipeline
-
-
+- FastAPI, Uvicorn, Pydantic, Jinja2
+- Pytest (unit/integration), Playwright (E2E)
+- GitHub Actions CI
 
 ## License
 
-
-
-MIT License### Testing- **Code Quality**: Pylint and security scanning## Featuresgit clone https://github.com/kk795-NJIT/IS601_Module8.gitA comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.A comprehensive FastAPI-based calculator application with full test coverage, logging, and CI/CD integration.---
-
-
-| Technology | Version | Purpose |
-
-|-----------|---------|---------|
-
-| [Pytest](https://pytest.org/) | 8.3.3 | Testing framework |
-
-| [Coverage.py](https://coverage.readthedocs.io/) | 6.0.0 | Code coverage |### Logging & Monitoring
-
-| [Playwright](https://playwright.dev/python/) | 1.48.0 | E2E testing |
-
-- **Structured Logging**: INFO, DEBUG, and ERROR level logging
-
-### DevOps
-
-- **CI/CD**: GitHub Actions- **Multiple Outputs**: Console and file-based logging (app.log)### Core Functionalitycd IS601_Module8
-
-- **Security**: Trivy scanner
-
-- **Code Quality**: Pylint 3.3.1- **Operation Tracking**: All operations logged with timestamps
-
-- **Containerization**: Docker
-
-- **Error Tracking**: Comprehensive error logging and diagnostics- **Arithmetic Operations**: Add, subtract, multiply, and divide operations
-
-## 🚀 Getting Started
-
-
-
-### Prerequisites
-
-## Technology Stack- **Web Interface**: Interactive calculator UI at http://localhost:8000```
-
-- Python 3.10 or higher
-
-- pip (Python package manager)
-
-- Git
-
-| Category | Technology | Version |- **RESTful API**: Well-designed API endpoints with proper error handling
-
-### Installation
-
-|----------|-----------|---------|
-
-1. **Clone the repository**
-
-   ```bash| Framework | FastAPI | 0.115.4 |- **Input Validation**: Comprehensive validation of user inputs
-
-   git clone https://github.com/kk795-NJIT/IS601_Module8.git
-
-   cd IS601_Module8| Server | Uvicorn | 0.32.0 |
-
-   ```
-
-| Validation | Pydantic | 2.9.2 |- **Error Handling**: Graceful error handling for edge cases (e.g., division by zero)
-
-2. **Create and activate virtual environment**
-
-   ```bash| Templating | Jinja2 | 3.1.4 |
-
-   # Create virtual environment
-
-   python -m venv venv| Testing | Pytest | 8.3.3 |### 2. Set Up Python Environment## 📋 Project Overview
-
-   
-
-   # Activate on macOS/Linux| Coverage | Coverage.py | 6.0.0 |
-
-   source venv/bin/activate
+MIT
 
    | E2E Testing | Playwright | 1.48.0 |### Quality Assurance
 
