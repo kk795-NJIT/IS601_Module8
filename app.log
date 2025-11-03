@@ -24,3 +24,57 @@
 2025-11-02 17:12:21,925 - __main__ - INFO - POST /divide - Dividing 109.0 / 119.0
 2025-11-02 17:12:21,925 - app.operations - INFO - Performing division: 109.0 / 119.0
 2025-11-02 17:12:21,925 - __main__ - INFO - Divide operation successful: 109.0 / 119.0 = 0.9159663865546218
+2025-11-02 23:39:31,897 - __main__ - INFO - Starting FastAPI Calculator Application
+2025-11-02 23:39:36,413 - __main__ - INFO - GET / - Serving homepage
+2025-11-02 23:41:34,181 - __main__ - INFO - Starting FastAPI Calculator Application
+2025-11-02 23:41:38,363 - __main__ - INFO - GET / - Serving homepage
+2025-11-02 23:41:48,461 - __main__ - INFO - POST /add - Adding 10.0 + 20.0
+2025-11-02 23:41:48,462 - app.operations - INFO - Performing addition: 10.0 + 20.0
+2025-11-02 23:41:48,462 - __main__ - INFO - Add operation successful: 10.0 + 20.0 = 30.0
+2025-11-02 23:42:00,845 - __main__ - INFO - POST /subtract - Subtracting 10.0 - 20.0
+2025-11-02 23:42:00,845 - app.operations - INFO - Performing subtraction: 10.0 - 20.0
+2025-11-02 23:42:00,845 - __main__ - INFO - Subtract operation successful: 10.0 - 20.0 = -10.0
+2025-11-02 23:42:02,345 - __main__ - INFO - POST /multiply - Multiplying 10.0 * 20.0
+2025-11-02 23:42:02,345 - app.operations - INFO - Performing multiplication: 10.0 * 20.0
+2025-11-02 23:42:02,345 - __main__ - INFO - Multiply operation successful: 10.0 * 20.0 = 200.0
+2025-11-02 23:42:03,792 - __main__ - INFO - POST /divide - Dividing 10.0 / 20.0
+2025-11-02 23:42:03,793 - app.operations - INFO - Performing division: 10.0 / 20.0
+2025-11-02 23:42:03,793 - __main__ - INFO - Divide operation successful: 10.0 / 20.0 = 0.5
+2025-11-02 23:45:55,611 - __main__ - INFO - GET / - Serving homepage
+2025-11-02 23:45:56,421 - __main__ - INFO - Starting FastAPI Calculator Application
+2025-11-02 23:51:04,819 - __main__ - INFO - Starting FastAPI Calculator Application
+2025-11-02 23:51:18,311 - __main__ - INFO - Starting FastAPI Calculator Application
+2025-11-02 23:51:25,353 - __main__ - INFO - GET / - Serving homepage
+2025-11-02 23:51:30,228 - __main__ - INFO - POST /add - Adding 1.0 + 1.0
+2025-11-02 23:51:30,229 - app.operations - INFO - Performing addition: 1.0 + 1.0
+2025-11-02 23:51:30,229 - __main__ - INFO - Add operation successful: 1.0 + 1.0 = 2.0
+2025-11-02 23:51:31,108 - __main__ - INFO - POST /subtract - Subtracting 1.0 - 1.0
+2025-11-02 23:51:31,109 - app.operations - INFO - Performing subtraction: 1.0 - 1.0
+2025-11-02 23:51:31,109 - __main__ - INFO - Subtract operation successful: 1.0 - 1.0 = 0.0
+2025-11-02 23:51:32,042 - __main__ - INFO - POST /multiply - Multiplying 1.0 * 1.0
+2025-11-02 23:51:32,043 - app.operations - INFO - Performing multiplication: 1.0 * 1.0
+2025-11-02 23:51:32,043 - __main__ - INFO - Multiply operation successful: 1.0 * 1.0 = 1.0
+2025-11-02 23:51:32,690 - __main__ - INFO - POST /divide - Dividing 1.0 / 1.0
+2025-11-02 23:51:32,690 - app.operations - INFO - Performing division: 1.0 / 1.0
+2025-11-02 23:51:32,690 - __main__ - INFO - Divide operation successful: 1.0 / 1.0 = 1.0
+2025-11-02 23:51:35,890 - __main__ - INFO - POST /add - Adding 1.2 + 1.0
+2025-11-02 23:51:35,890 - app.operations - INFO - Performing addition: 1.2 + 1.0
+2025-11-02 23:51:35,890 - __main__ - INFO - Add operation successful: 1.2 + 1.0 = 2.2
+2025-11-02 23:51:36,561 - __main__ - INFO - POST /subtract - Subtracting 1.2 - 1.0
+2025-11-02 23:51:36,561 - app.operations - INFO - Performing subtraction: 1.2 - 1.0
+2025-11-02 23:51:36,561 - __main__ - INFO - Subtract operation successful: 1.2 - 1.0 = 0.19999999999999996
+2025-11-02 23:51:37,058 - __main__ - INFO - POST /multiply - Multiplying 1.2 * 1.0
+2025-11-02 23:51:37,059 - app.operations - INFO - Performing multiplication: 1.2 * 1.0
+2025-11-02 23:51:37,059 - __main__ - INFO - Multiply operation successful: 1.2 * 1.0 = 1.2
+2025-11-02 23:51:37,541 - __main__ - INFO - POST /divide - Dividing 1.2 / 1.0
+2025-11-02 23:51:37,542 - app.operations - INFO - Performing division: 1.2 / 1.0
+2025-11-02 23:51:37,542 - __main__ - INFO - Divide operation successful: 1.2 / 1.0 = 1.2
+2025-11-02 23:51:38,575 - __main__ - INFO - POST /divide - Dividing 1.2 / 1.0
+2025-11-02 23:51:38,575 - app.operations - INFO - Performing division: 1.2 / 1.0
+2025-11-02 23:51:38,575 - __main__ - INFO - Divide operation successful: 1.2 / 1.0 = 1.2
+2025-11-02 23:51:38,775 - __main__ - INFO - POST /divide - Dividing 1.2 / 1.0
+2025-11-02 23:51:38,776 - app.operations - INFO - Performing division: 1.2 / 1.0
+2025-11-02 23:51:38,776 - __main__ - INFO - Divide operation successful: 1.2 / 1.0 = 1.2
+2025-11-02 23:51:41,390 - __main__ - INFO - POST /divide - Dividing 1.2 / 1.1
+2025-11-02 23:51:41,391 - app.operations - INFO - Performing division: 1.2 / 1.1
+2025-11-02 23:51:41,391 - __main__ - INFO - Divide operation successful: 1.2 / 1.1 = 1.0909090909090908
